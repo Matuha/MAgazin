@@ -275,13 +275,25 @@ h4{
 
 }
 
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width:50vw;
+}
+
+.footer_sec:last-child{
+    margin-right: 20px;
+}
+
 .footer_sec{
     margin-left: 30px;
     margin-top: 20px;
+    width: 40%;
     min-width: 200px;
-    width: 30%;
     transition: ease all 1s;
 }
+
+
 
 .spisok{
     padding:0;
@@ -314,8 +326,86 @@ h4{
     opacity: .5;
 }
 
-@media (max-width: 640px){
-    .footer_sec{
-        width: 50%;
-    }
+
+.webs{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-flow: nowrap;
+    margin: 0 auto;
+    transition: all .5s linear;
 }
+
+@media screen and (max-width: 550px){
+    .webs{
+        flex-wrap: wrap;
+        height: 200px;
+    }
+    }
+
+.link{
+    width: 40px;
+    height: 40px;
+    margin-right: 30px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+.link i{
+     color:#000;
+     text-decoration: none;
+}
+
+
+
+.link:hover:nth-child(1){
+    box-shadow: 0 0 5px #2b81cc;
+    border-color: #2b81cc;
+
+}
+
+.link:hover:nth-child(1) i {
+    text-shadow: 0 0 2px #2b81cc;
+    color:#2b81cc;
+}
+
+.link:hover:nth-child(2){
+    box-shadow: 0 0 5px #ff9f2d;
+    border-color: #ff9f2d;
+
+}
+
+.link:hover:nth-child(2) i {
+    text-shadow: 0 0 2px #ff9f2d;
+    color:#ff9f2d;
+}
+
+.link:hover:nth-child(3){
+    box-shadow: 0 0 5px #ff0008;
+    border-color: #ff0008;
+
+}
+
+.link:hover:nth-child(3) i {
+    text-shadow: 0 0 2px #ff0008;
+    color:#ff0008;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
